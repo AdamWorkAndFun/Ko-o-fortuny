@@ -1,0 +1,93 @@
+.draw{
+width: 100%;height: 38%;
+position: relative;
+margin:auto;
+@media only screen and (max-height:800px){
+  height: 30%;
+}
+&::after{
+        content: '';
+        position: absolute;
+        width: 2rem;height: 4rem;
+        background-color: black;
+        left: 50%;
+        transform: translate(-50%);
+        clip-path: polygon(50% 0,100% 100%,0 100%)
+    }
+   
+}
+.circle{
+    width: 35rem;height: 35rem;background-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+     &::before{
+        content: '';
+        width: 4rem;height: 4rem;background-color: white;
+        position: absolute;top:50%;left: 50%;
+        z-index: 3;transform: translate(-50%,-50%);border-radius: 50%;
+    }
+     @media only screen and (max-width:800px){
+         width:calc(35rem*0.6);height: calc(35rem*0.6);
+     }
+     @media only screen and (max-height:800px){
+        width:calc(35rem*0.6);height: calc(35rem*0.6);
+    }
+    
+    &__bankrut,&__400,&__150,&__350,&__200,&__500,&__100,&__200-2,&__300,&__150-2,&__1000,&__bankrut-2,&__350-2,&__stop,&__450,&__250,&__550,&__400-2,&__100-2,&__200-3,&__300-2,&__1500,&__100-3,&__250-2{
+        position: absolute;
+        width:4.7rem;height: 17.5rem;
+        transform: translate(-50%);
+        clip-path: polygon(52% 0,100% 100%,0 100%,48% 0);
+        border-radius: .4rem;
+        
+        @media only screen and (max-width:800px){
+            width:calc(4.57rem*0.6) ;height:calc(17.5rem*0.6)
+        }
+        @media only screen and (max-height:800px){
+            width:calc(4.57rem*0.6) ;height:calc(17.5rem*0.6)
+        }
+
+    }
+     &__bankrut{font-size:1.2rem;background-color: black;top:50%;left:50%}
+     &__400{background-color: blueviolet;top:49.3%;left:36.8%;transform: rotate(15.6deg)}
+     &__150{background-color: crimson;top:46.8%;left:30.8%;transform: rotate(31deg)}
+     &__350{background-color: blue;top:42.8%;left:25.6%;transform: rotate(46.5deg)}
+     &__200{ background-color: blueviolet;top:37.7%;left:21.5%;transform: rotate(61.8deg)}
+     &__100{background-color: blue;top:31.5%;left:19%;transform: rotate(76.5deg)}
+     &__500{background-color: brown;top:25%;left:18.2%;transform: rotate(90deg)}
+
+     &__200-2{background-color: blueviolet;top:18.8%;left:19%;transform: rotate(104.8deg)}
+     &__300{background-color: violet;top:12.8%;left:21.5%;transform: rotate(119.8deg)}
+     &__150-2{background-color: blue;top:8%;left:25%;transform: rotate(135deg)}
+     &__1000{background-color: blueviolet;top:3.6%;left:30%;transform: rotate(149.6deg)}
+     &__bankrut-2{font-size:1.2rem;background-color: brown;top:1%;left:36%;transform: rotate(165deg)}
+    
+     &__350-2{background-color: blue;top:0%;left:42.8%;transform: rotate(180deg)}
+     &__stop{background-color: brown;top:.7%;left:49.5%;transform: rotate(195deg)}
+     &__450{background-color: blueviolet;top:3.2%;left:56%;transform: rotate(209.5deg)}
+     &__250{background-color: blue;top:7%;left:61%;transform: rotate(225deg)}
+     &__550{background-color: greenyellow;top:12.8%;left:65%;transform: rotate(240deg)}
+     &__400-2{background-color: blueviolet;top:18.8%;left:67.8%;transform: rotate(255deg)}
+     &__100-2{background-color: blue;top:25%;left:68.5%;transform: rotate(270deg)}
+     &__250-2{background-color: brown;top:31.5%;left:67.8%;transform: rotate(285deg)}
+      &__200-3{background-color: burlywood;top:37.3%;left:65%;transform: rotate(299.9deg)}
+      &__300-2{background-color: blueviolet;top:42.5%;left:61.4%;transform: rotate(315deg)}
+       &__1500{background-color: blue;top:46.6%;left:56.3%;transform: rotate(330deg)}
+      &__100-3{background-color: orange;top:49%;left:50%;transform: rotate(-14.8deg)}
+}
+.circle__text{
+    margin-top: 280%;
+    color: white;
+     font-size: 1.6rem;
+     letter-spacing: .3rem;
+     transform: rotate(270deg);
+     text-transform: uppercase;
+}
+.draw__info{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0,-50%);font-size: 3rem;
+    letter-spacing: .3rem;color: brown;text-shadow: 1px 1px black;
+}

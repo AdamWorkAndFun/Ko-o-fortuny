@@ -1,0 +1,20 @@
+.player{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+    &__1{
+        width: 40%;
+    }
+    &__2{
+        width: 40%;
+    }
+    &__1-table,&__2-table{
+        width:80%;height: 5px;
+        background-color: gray;
+        margin :1rem auto;
+        border: .5px solid black;
+    }
+}

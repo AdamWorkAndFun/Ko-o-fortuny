@@ -1,0 +1,71 @@
+.controll{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__Game{
+        flex-basis: 100%;
+        text-align: center;padding:2rem;
+        display: flex;
+        justify-content: space-evenly;
+        @media only screen and (max-height:800px){
+            padding: .5rem;
+        }
+        &-button{
+           @include button-mix;
+            &:focus,&:active{outline: none;}
+        }
+        &-spin{
+            @include button-mix;
+            &:focus,&:active{outline: none;}
+        }
+        &-info{
+            @include button-mix;
+            &:focus,&:active{outline: none;}
+        }
+    }
+    &__guessLetter{
+
+        &-text{
+            width: 5rem;
+           @include input-mix;
+        }
+        &-button{
+            @include button-mix;
+            &:focus,&:active{outline: none;}
+        }
+    }
+    &__buyLetter{
+
+        &-text{
+            width: 5rem;
+            @include input-mix;
+        }
+        &-button{
+            @include button-mix;
+            &:focus,&:active{outline: none;}
+        }
+    }
+    &__guessPassword{
+        &-text{
+            width: 45rem;
+            @include input-mix;
+            @media only screen and (max-width:500px){
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &-button{
+            @include button-mix;
+            &:focus,&:active{outline: none;}
+            @media only screen and (max-width:500px){
+                width: 100%;
+                text-align: center;
+                
+            }
+        }
+    }
+}
+.active{
+    background-image: radial-gradient(brown,white);text-shadow: 1px 1px rgb(228, 230, 159);
+}
