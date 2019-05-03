@@ -24,7 +24,7 @@ const base={
     powiedzenie:['nigdy nie mów nigdy','nosił wilk razy kilka ponieśli i wilka'],
     serial:['daleko od noszy','m jak miłośc','noce i dnie','czarne chmury'],
     film:['kiler','chłopaki nie płaczą','walka o ogień','harry poter książe tajemnic'],
-    ludzie:['maciej stoltman','kononowicz krzysztof','andrzej rosiewicz']
+    ludzie:['maciej stoltman','kononowicz krzysztof','andrzej rosiewicz'],
     kind:'',
     round:1,
     rotate:0,
